@@ -56,7 +56,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   margin: 0;
   background-color: #fafafa;
   position: relative;
@@ -65,6 +64,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-block-start: 100px;
 }
 header {
   text-align: center;
@@ -129,8 +129,11 @@ picture {
 }
 
 @media screen and (min-width: 861px) and (max-width: 1200px) {
+  .container {
+    margin-block-start: 100px;
+  }
   header {
-    margin-block: 70px;
+    margin-block-end: 70px;
   }
   .card-grid {
     display: grid;
@@ -184,6 +187,9 @@ picture {
     font-weight: 400;
     margin: 0px;
     color: var(--grey500);
+  }
+  .container {
+    margin-block-start: 0px;
   }
   header {
     text-align: center;
